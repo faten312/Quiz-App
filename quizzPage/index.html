@@ -1,0 +1,77 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examination Page </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="start_btn"><button ><span><i class="fa-solid fa-play"></i> </span>Start Now</button></div>
+
+   
+    <div class="info_box">
+        
+        <div class="info-list">
+            <div class="info"> You will have only <span>30 seconds</span> per each question.</div>
+        </div>
+        <div class="buttons">
+            <button class="restartt">Go</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <div class="question-head">
+            <div class="title">
+                <i class="fa-solid fa-bookmark" id="marki" onclick="markQuestion()"></i>
+            </div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">30</div>
+            </div>
+        </div>
+        <div class="time_line"></div>
+        <section>
+            <div class="que_text">
+             
+            </div>
+            <div class="option_list">
+                
+            </div>
+        </section>
+
+        <footer>
+            <button class="prev_btn" onclick="getPrev()">Previos</button>
+            <div class="total_que">
+            </div>
+           
+            <button class="next_btn">Next</button>
+        
+        </footer>
+
+        <div class="mark">
+            <p class="addHint"></p>
+
+        </div>
+    </div>
+
+    <div class="result_box">
+     
+        <div class="complete_text">You've Finish the Quiz!</div>
+        <div class="score_text">
+          
+        </div>
+       
+    </div>
+
+    
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>
